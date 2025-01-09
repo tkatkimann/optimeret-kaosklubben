@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="da-DK" dir="ltr">
+<head>
+    <!-- globale metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sitemap" href="sitemap.xml" />
+
+    <!-- favicon -->    
+    <link rel="icon" href="img/kaos-favicons/favicon.ico" type="image/x-icon">
+
+    <!-- primære meta tags -->
+    <title>KAOSklubben | Om os</title>
+    <meta name="title" content="KAOSklubben | Om os" />
+    <meta name="description" content="KAOSklubben Forsiden" />
+    <meta
+      name="copyright"
+      content="Copyright kaosklubben.dk Materialet må ikke gengives uden tilladelse."
+    />
+    <meta name="publisher" content="kaosklubben.dk" />
+    <meta name="keywords" content="grafisk design,visuel kommunikation,storytelling,iværksætter,startup,lille virksomhed,mindre virksomhed,små virksomheder,billig grafisk design,hjemmeside,logo,visitkort,branding,plakat,reklame,banner,produktvideo,reklamefilm,studerende,budget" />
+
+   <!-- fonte-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- robots -->
+    <meta name="robots" content="follow, noarchive, nosnippet" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- javascript -->
+    <script src="js/sidebar.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script src="js/infographic.js" defer></script>
+
+</head>
+
+<body >
+
+    <!--NAVBAREN STARTER NEDENUNDER-->
+    <header>
+        <nav class="fixed-nav">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="25px" height="25px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></a></li>
+                <li><a href="index.html">Forsiden</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+        
+            </ul>
+            <ul>
+                <li><a href="index.html"><img src="img/stort-logo-kaosklubben.svg" class="logo" alt="stort ikon"></a></li>
+                <li class="hideOnMbile"><a href="om-os.html">Om os</a></li>
+                <li class="hideOnMbile"><a href="cases.html">Cases</a></li>
+                <li class="hideOnMbile"><a href="kontakt.html">Kontakt</a></li> 
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg></a></li>
+            
+        
+            </ul>
+        </nav>
+       </header>
+
+   <!--INDHOLDET STARTER NEDENUNDER-->
+
+   <section class="om">
+
+    <section>
+        <h1>Mød KAOSklubbens medlemmer</h1>
+        <article>
+            KAOSklubben opstod i sensommeren 2023 og består af Kitta, AK og Olivia, som mødte hinanden på vejen til at blive mediegrafikere og alle tre droppede ud af uddannelsen og ind i et limboland. Egenrådigt søgte vi videre ind i den visuelle verden. Vi opsøgte opgaver inden for video og grafik, som vi kunne påtage os, og KAOSklubben blev en realitet. <br><br> KAOSklubben er ildsjæle med en faglig stolthed og passion omkring vores fag og håndværket. Vi ønsker at levere solide, kreative løsninger til andre ildsjæle - iværksættere, startups og mindre virksomheder med store ambitioner, men en lille pengepung. Med stærk visuel kommunikation ønsker KAOSklubben at hjælpe ildsjæle i mål, samtidig med at vi som grafisk designere selv får muligheden for at dygtiggøre os på vores faglige rejse. Win-win.
+        </article>
+    </section>
+
+   </section>
+   
+
+    <section>
+        <section class="profiler">
+            <section class="profil">
+                <h2>Kitta</h2>
+                <img src="img/portraits/kitta-portrait.svg" alt="Portræt af Kitta">
+            </section>
+            <section class="profil">
+                <h2>AK</h2>
+                <img src="img/portraits/ak-portrait.svg" alt="Portræt af AK">
+            </section>
+            <section class="profil">
+                <h2>Olivia</h2>
+                <img src="img/portraits/olivia-portrait.svg" alt="Portræt af Olivia">
+            </section>
+        </section>
+    </section>
+
+    <section class="art-programs">
+        <img src="img/portfolio/tegneredskaber.svg" alt="tegneværtøjer">
+    </section>
+
+    <section class="om">
+
+        <div id="gallery">
+            <div id="gallery-content">
+                <!-- Dynamisk indhold (billede/video) indsættes her via JavaScript -->
+            </div>
+            <p id="description">Beskrivelse vil blive vist her.</p>
+            <button id="prev">←</button>
+            <button id="next">→</button>  
+        </div>
+    
+    
+    </section>
+
+
+    <section class="om-2">
+
+        <section>
+            <h2>KAOSklubbens arbejdsproces</h2>
+            <article>
+                Vi har lavet en visuel graf der viser de trin vi foretager os i processen. Fra det første møde til den færdige løsning. Grafen skal give et klart overblik over, hvad du kan forvente og hvordan vi arbejder henover tid for at skabe den bedste løsning for dig.  
+                <br>
+                <br>
+
+                Tryk på de forskellige ikoner og læs om processen.
+            </article>
+        </section>
+
+
+
+        
+        <!-- Vores ikon serie--> 
+        <section class="icon-row"> 
+
+            <section class="icon-container">
+                <img src="img/infographic-ikoner/hand-shake.svg" alt="Møde" class="icon" data-bubble="bubble1">
+                <p>Møde</p>
+                <section class="bubble" id="bubble1">
+                    <img src="img/infographic-ikoner/meeting-text.svg" alt="Møde Boble">
+                </section>
+            </section>
+
+            <section class="icon-container">
+                <img src="img/infographic-ikoner/light-bulb.svg" alt="Brainstorm" class="icon" data-bubble="bubble2">
+                <p>Brainstorm</p>
+                <section class="bubble" id="bubble2">
+                    <img src="img/infographic-ikoner/brain-text.svg" alt="Brainstorm Boble">
+                </section>
+            </section>
+
+            <section class="icon-container">
+                <img src="img/infographic-ikoner/stickey-notes.svg" alt="Planlægning" class="icon" data-bubble="bubble3">
+                <p>Planlægning</p>
+                <section class="bubble" id="bubble3">
+                    <img src="img/infographic-ikoner/notes-text.svg" alt="Planlægning Boble">
+                </section>
+            </section>
+
+            <section class="icon-container">
+                <img src="img/infographic-ikoner/smiley.svg" alt="Tilfredshed" class="icon" data-bubble="bubble4">
+                <p>Tilfredshed</p>
+                <section class="bubble" id="bubble4">
+                    <img src="img/infographic-ikoner/smiley-text.svg" alt="Tilfredshed Boble">
+                </section>
+            </section>
+
+            <section class="icon-container">
+                <img src="img/infographic-ikoner/family.svg" alt="Fleksibilitet" class="icon" data-bubble="bubble5">
+                <p>Fleksibilitet</p>
+                <section class="bubble" id="bubble5">
+                    <img src="img/infographic-ikoner/family-text.svg" alt="Fleksibilitet Boble" >
+                </section>
+            </section>
+
+
+            <section class="icon-container">
+                <img src="img/infographic-ikoner/thumps-up.svg" alt="Afslutning" class="icon" data-bubble="bubble6">
+                <p>Afslutning</p>
+                <section class="bubble" id="bubble6">
+                    <img src="img/infographic-ikoner/thumbs-text.svg" alt="Afslutning Boble">
+                </section>
+            </section>
+
+      </section>
+      
+  
+        <!-- Pilen ligger mellem ikonerne og teksten  -->
+        <aside class="arrow-container">
+            <img src="img/infographic-ikoner/pil.svg" alt="Lang pil" class="long-arrow">
+        </aside>
+  
+     
+
+    
+    </section>
+
+
+   <!--FOOTEREN STARTER NEDENUNDER-->
+
+   <footer>
+    <section class="container">
+        <div class="logo-footer">
+            <img src="img/lille-logo-kaosklubben.svg" alt="KAOSklubbens logo">
+        </div>
+        <div class="kontakt">
+            <h3>Kontaktoplysninger</h3>
+            <ul>
+                <li> <a href="#">Tlf. Nr. 86 12 43 90 </a></li>
+                <li><a href="#">info@kaosklubben.dk </a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <h3>Følg os på sociale medier</h3>
+            <ul>
+                <li> <a href="#"><img src="img/footer-ikoner/instagram-ikon.svg" alt="instagram"></a></li>
+                <li><a href="#"> <img src="img/footer-ikoner/facebook-ikon.svg" alt="facebook"></a></li>
+                <li><a href="#"> <img src="img/footer-ikoner/linkedin-ikon.svg" alt="linkedin"></a></li>
+            </ul>
+        </div>
+
+    </section>
+    <section class="copyright"> Copyright &copy; 2024  www.kaosklubben.dk</section>
+</footer>
+
+
+</body>
+</html>

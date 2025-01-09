@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="da-DK" dir="ltr">
+<head>
+    <!-- globale metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sitemap" href="sitemap.xml" />
+
+    <!-- favicon -->    
+    <link rel="icon" href="img/kaos-favicons/favicon.ico" type="image/x-icon">
+
+    <!-- primære meta tags -->
+    <title>KAOSklubben | Forsiden</title>
+    <meta name="title" content="KAOSklubben | Forsiden" />
+    <meta name="description" content="KAOSklubben Forsiden" />
+    <meta
+      name="copyright"
+      content="Copyright kaosklubben.dk Materialet må ikke gengives uden tilladelse."
+    />
+    <meta name="publisher" content="kaosklubben.dk" />
+    <meta name="keywords" content="grafisk design,visuel kommunikation,storytelling,iværksætter,startup,lille virksomhed,mindre virksomhed,små virksomheder,billig grafisk design,hjemmeside,logo,visitkort,branding,plakat,reklame,banner,produktvideo,reklamefilm,studerende,budget" />
+
+    <!-- fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- robots -->
+    <meta name="robots" content="follow, noarchive, nosnippet" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- javascript -->
+    <script src="js/sidebar.js" defer></script>
+  
+
+</head>
+
+<body >
+
+    <!--NAVBAREN STARTER NEDENUNDER-->
+   <header>
+    <nav class="fixed-nav">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="25px" height="25px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></a></li>
+            <li><a href="index.html">Forsiden</a></li>
+            <li><a href="om-os.html">Om os</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+    
+        </ul>
+        <ul>
+            <li><a href="index.html"><img src="img/stort-logo-kaosklubben.svg" class="logo" alt="stort ikon"></a></li>
+            <li class="hideOnMbile"><a href="om-os.html">Om os</a></li>
+            <li class="hideOnMbile"><a href="cases.html">Cases</a></li>
+            <li class="hideOnMbile"><a href="kontakt.html">Kontakt</a></li> 
+            <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg></a></li>
+        
+    
+        </ul>
+    </nav>
+   </header>
+
+    <!-- INDHOLDET STARTER NEDENUNDER -->
+
+    <section id="hero">
+        <video class="primary-video" autoplay loop muted>
+          <source src="img/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <a href="om-os.html" class="btn">MØD OS</a>
+    </section>
+
+     <!-- infosektion bygget op med H2 + tekst  -->
+    <section id="content" class="site-intro">
+        <h1>Velkommen til KAOSklubben</h1>
+        
+        <p>
+            KAOSklubben er et kreativt fælleskab drevet af tre passionerede studerende indenfor grafisk design. <br><br>
+
+            Vi tilbyder flotte, funktionelle og budgetvenlige designløsninger til iværksættere og små virksomheder med store drømme.<br><br>
+            
+            Uanset om du mangler et logo, en plakat, en video eller en hel visuel identitet, er vi klar til at tage opgaven, hvor vi sørger for at formidle jeres budskab klart og tydeligt.          
+        </p>
+
+    </section>
+
+     <!-- sektion med 3-søjle-opsætning med responsive funktion ift. skærmstørrelse -->
+     <section id="content-dark" class="teaser-content dark row">
+        <div class="col-3">
+            <img src="img/forsiden-ikoner/kvalitet.webp" alt="kvalitet"/>
+        <h2>KVALITET</h2>
+        <p>
+            Vi går op i at dygtiggøre vores  evner og designs. 
+            Derfor lytter vi til dine idéer, sætter os ind i dine behov og arbejder tæt sammen med dig fra start til slut 
+        </p>
+      </div>
+      <div class="col-3">
+        <img src="img/forsiden-ikoner/penge.webp" alt="pris"/>
+        <h2>PRIS</h2>
+        <p>
+            Vi tilbyder fleksible priser, der tilpasses  projektets omfang. Via god dialog finder vi frem til en løsning, der både passer til dit behov og dit budget
+        </p>
+      </div>
+      <div class="col-3">
+        <img src="img/forsiden-ikoner/tid.webp" alt="tid"/>
+        <h2>TID</h2>
+        <p>
+            Som studerende med familieliv kan det tage lidt længere tid at færdiggøre designløsningerne. Men vi sørger for at have en tidsplan klar til dig, så du ved, hvornår du kan forvente at have det færdige resultat i hånden
+        </p>
+      </div>
+      <div class="col-3">
+        <img src="img/forsiden-ikoner/byttehandel.webp" alt="byttehandel" />
+        <h2>BYTTE-BYTTE</h2>
+        <p>
+            Vi tilbyder vores 'bytte-bytte-princip', hvor vi i stedet for betaling bytter vores designløsninger for varer eller tjenester fra din virksomhed
+        </p>
+      </div>
+      <div class="col-3">
+        <img src="img/forsiden-ikoner/samtale.webp" alt="samtale"/>
+        <h2>MØDEFORM</h2>
+        <p>
+            Når du kontakter os, kan vi tilbyde online møder via teams, zoom eller den platform, der passer dig bedst. Vi kan også starte med et fysisk møde, hvis det er at foretrække
+        </p>
+      </div>
+      <div class="col-3">
+        <img src="img/forsiden-ikoner/proces.webp" alt="proces"/>
+        <h2>PROCES</h2>
+        <p>
+            Vi sørger for at holde dig opdateret undervejs i processen, hvor vi viser dig vores idéer og konceptløsninger, så vi sammen kan evaluere og tilpasse dem for at sikre det bedst mulige resultat
+        </p>
+      </div>
+     </section>
+
+    <!--sektion med billede og tekst + knap -->
+
+
+    <section class="smukig-contantainer">
+
+        <img src="img/arbejder.webp" alt="KAOSklubbens kreative arbejde" />
+          
+            <section class="teaser-info">
+                <article class="teaser-text">
+                        <h2>Er du nysgerrig på vores arbejde?</h2>
+                    <p>Se vores tidligere projekter og læs om, hvordan vi har hjulpet andre kunder. Her deler vi både de færdige designløsninger og kundernes feedback</p>
+                </article>
+            
+                <a href="cases.html" class="btn2-link">SE VORES CASES</a> 
+            
+            </section>
+       
+    </section>
+
+
+    <!--FOOTEREN STARTER NEDENUNDER-->
+
+<footer>
+    <section class="container">
+        <div class="logo-footer">
+            <img src="img/lille-logo-kaosklubben.svg" alt="KAOSklubbens logo">
+        </div>
+        <div class="kontakt">
+            <h3>Kontaktoplysninger</h3>
+            <ul>
+                <li> <a href="#">Tlf. Nr. 86 12 43 90 </a></li>
+                <li><a href="#">info@kaosklubben.dk </a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <h3>Følg os på sociale medier</h3>
+            <ul>
+                <li> <a href="#"><img src="img/footer-ikoner/instagram-ikon.svg" alt="instagram"></a></li>
+                <li><a href="#"> <img src="img/footer-ikoner/facebook-ikon.svg" alt="facebook"></a></li>
+                <li><a href="#"> <img src="img/footer-ikoner/linkedin-ikon.svg" alt="linkedin"></a></li>
+            </ul>
+        </div>
+
+    </section>
+    <section class="copyright"> Copyright &copy; 2024  www.kaosklubben.dk</section>
+</footer>
+
+
+
+</body>
+</html>
