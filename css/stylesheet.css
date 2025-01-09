@@ -1,0 +1,842 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* ===================================! gennerelle styles ! ======================================= */
+
+:root {
+    --primary-1-color: #ff8e00;
+    --secondary-1-color: #34B5A9;
+    --accent-1-color: #F7647D;
+    --primary-text-color: #020202;
+    --secondary-text-color: #F8EEE1;
+   }
+   
+
+body{
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.fixed-nav{
+position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Sørger for at navbaren vises øverst */
+  background-color:#FF8E00;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #020202;
+}
+
+
+
+nav a:hover{
+    background-color: #F16F27;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+
+
+.logo{
+    margin-right: auto;
+    height: 60px;
+    padding: 0 20px;
+}
+
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height:100vh;
+    width: 250px;
+    background: #ff8c00;
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width:100%;
+}
+
+.menu-btn{
+    display:none;
+}
+
+@media(max-width:800px){
+    .hideOnMbile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 160%;
+    padding-bottom: 60px;
+    font-family: 'Righteous', sans-serif;
+   }
+   
+   h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 180%;
+    font-family: 'Righteous', sans-serif;
+
+   }
+   h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Righteous', sans-serif;
+   }
+
+
+
+/* =================================== ! index.html med hero-sektion ! ======================================= */
+
+
+
+#hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: #000000;
+    height: 500px;
+}
+
+#hero video {
+    width: 100%;
+    object-fit: cover
+}
+   
+   /* vigtigt at knap placeres oven på videoen */
+   
+#hero a {
+    position: absolute;
+    bottom: 10%;
+    z-index: 1;
+    background-color: var(--accent-1-color);
+    color: var(--secondary-text-color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2px solid #C56666;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#hero button:hover{
+    background-color: #E75870;
+}
+
+#hero button:active{
+    transform: scale(0.96);
+}
+
+
+.smukig-contantainer{
+    background-color: var(--secondary-1-color);
+    display: flex;
+    height: 460px;
+    width:auto;
+}
+
+.teaser-info{
+    margin: 60px 40px  ;
+    
+}
+
+
+.teaser-text{
+    
+    margin-right: 50%;
+    height: 150px;
+}
+
+#content {
+        padding:100px 50px;
+        text-align:left;
+        width:80%;
+        margin:0px auto;
+}
+
+    .dark {
+        width: 100%;
+        text-align: center;
+        padding: 80px 20%;
+        background-color: var(--primary-1-color);
+    
+    }
+    .dark p{
+        color: var(--primary-text-color);;
+    }
+    .dark h2{
+        color: var(--primary-text-color);;
+    }
+
+    .dark img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .dark2 {
+        width: 100%;
+        height: 50%;
+        text-align: left;
+        padding: 80px 20%;
+        background-color: var(--secondary-1-color);
+    }
+    .dark2 p{
+        color: var(--primary-text-color);;
+    }
+    .dark2 h2{
+        color: var(--primary-text-color);;
+    }
+    
+
+
+    .col-3 {
+        float: left;
+        width: 33.33%;
+        padding: 16px;
+    }
+       
+    .col-2 {
+        float: left;
+        width: 50%;
+        padding: 16px;
+    }
+       
+      
+    .image-wrapper {
+         position: relative;
+         overflow: hidden;
+    }
+       
+    .image-wrapper::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #f7647d6a; /* Add your color filter here */
+         z-index: 1;
+    }
+       
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+       
+    .text-large{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .text-small{
+        font-size: 1rem;
+    }
+       
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 160%;
+        padding-bottom: 20px;
+    }
+       
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 180%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+       
+       
+
+    .site-intro {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+       }
+       
+       
+   .btn {
+    margin-top: 0px;
+    background-color: var(--accent-1-color);
+    color: var(--secondary-text-color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2px solid #C56666;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none; 
+    display: inline-block; 
+  }
+  
+.btn:hover {
+    background-color: #E75870; 
+  }
+  
+#btn:active {
+    transform: scale(0.96);
+  }
+
+/* STYLING AF OM OS SIDEN STARTER NEDENUNDER */
+
+
+
+.om{
+    max-width: 1100px; 
+    margin: 0 auto;    
+    box-sizing: border-box;
+    padding: 80px 30px;
+}
+
+.om-2{
+    max-width: 1100px; 
+    margin: 0 auto;    
+    box-sizing: border-box;
+    padding: 0px 30px ;
+    padding-bottom: 250px;
+}
+
+.profiler {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profil img{
+    height: 200px;
+}
+
+
+.art-programs {
+ 
+    margin: 0; 
+    padding: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.art-programs img {
+    margin-top: 50px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+
+
+#gallery {
+    text-align: center;
+}
+
+#gallery-content {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+img, video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: #F7647D;
+}
+
+#description {
+    font-size: 16px;
+    color: #333;
+}
+
+
+/*Styling af ikonserien i inforgrafen starter nedenunder */
+
+.icon-row {
+    display: flex;
+    justify-content: center; /* Centrerer ikonerne vandret i midten af indholdet*/
+    align-items: center;
+    gap: 80px; /* Afstand mellem ikoner */
+    margin-bottom: 10px; 
+}
+
+
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Ikonet ligger over teksten */
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    position: relative; /* Gør det muligt at positionere boblen i forhold til containeren */
+}
+
+.icon {
+    
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon-container p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Styling af pilen */
+.arrow-container {
+    
+    display: flex;
+    justify-content: center; /* Centrerer pilen */
+}
+
+.long-arrow {
+    width: 90%; /* Pilen strækker sig under hele bredden */
+    max-width: 1000px;
+    height: auto;
+}
+
+
+.bubble {
+    display: none; /* Skjult som standard */
+    position: absolute;
+    z-index: 10;
+    top:120%;
+    left: 50%;  /* Centrer boblen horisontalt */
+    transform: translateX(-50%); /* Flyt boblen tilbage til midten */
+    width: 200%;  /* Øg bredden af boblen, så den kan være større end containeren */
+}
+
+.bubble.active {
+    display: block; /* Viser boblen, når den er aktiv */
+}
+
+.bubble img{
+    width: 100px;
+    height: auto;
+}
+
+
+
+/***STYLLING AF FOOOTER NEDENUNDER ****/
+footer{
+    background-color: #ff8c00;
+    color:black;
+    display:flex;
+    flex-direction: column; /* Sørger for at copyright ligger nederst på footeren*/
+    bottom: 0;
+
+}
+
+.container{
+    display:flex; /* lægger  tingene ved siden af hinanden */
+    gap:20px;
+   padding: 30px 60px;
+   
+}
+
+.logo-footer{
+    flex-grow:1;
+    flex-basis: 50%;
+}
+
+.logo-footer img{
+    height:160px;
+}
+
+.kontakt{
+    flex-grow:1;
+    flex-basis: 100%;
+}
+
+.kontakt ul{
+    list-style-type:none;
+    line-height: 2;
+}
+
+.kontakt a{
+    color:black;
+    text-decoration: none;
+}
+
+.kontakt a:hover{
+    color:white;
+    text-decoration: underline;
+
+}
+
+
+.social-links{
+   
+    flex-grow:1;
+    flex-basis: 60%;
+}
+
+.social-links ul{
+    list-style-type:none;
+    line-height: 1.6;
+    display: flex;
+}
+
+.social-links img{
+    margin-right: 20px;
+}
+
+
+
+.container h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.copyright{
+    padding: 15px 0;
+    text-align: center ;
+}
+
+
+
+
+
+
+/***STYLLING AF CASES NEDENUNDER ****/
+
+.cases{
+    max-width: 1100px; /* Maks bredde for indhold */
+    margin: 0 auto;    /* Centrerer indholdet */
+    box-sizing: border-box;
+    padding: 80px 30px;
+   
+}
+
+
+.look{
+    margin-bottom: 40px;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+.video-section video {
+    width: 600px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge */
+}
+
+.next-container{
+    background-color: var(--secondary-1-color);
+    height: 300px;
+}
+
+.next-info{
+    max-width: 1100px; 
+    margin: 0 auto;   
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+
+.next-info a{
+    margin-top: 20px;
+    display: block; /* Dette gør linket til en blok, så det kan flyttes */
+    margin-left: auto; 
+    width: fit-content; /* Denne funktion sørger for, at knappen kun er så bred som dens indhold */
+}
+
+
+
+.case-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; /* giver afstand mellem billedet og teksten */
+    margin-bottom: 30px;
+
+}
+
+.case-content {
+    display: flex;
+    flex-direction: column; 
+    width: 600px;
+   
+    
+}
+
+.img-ikon {
+    margin-left: auto;
+}
+
+
+.img-ikon img {
+    height: 180px; 
+    
+}
+
+
+.feedback{
+    margin-top: 40px;
+    display:flex;
+    align-items: flex-end; /* Justerer elementerne til bunden */
+    gap: 30px;
+    justify-content: center;
+}
+
+.profil-gastro{
+    height:100px;
+}
+
+
+.text-bubble{
+    height: 200px;
+}
+
+.btn2-link {
+    margin-top: 0px;
+    background-color: var(--accent-1-color);
+    color: var(--secondary-text-color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2px solid #C56666;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none; 
+    display: inline-block; 
+  }
+  
+.btn2-link:hover {
+    background-color: #E75870; 
+  }
+  
+.btn2-link:active {
+    transform: scale(0.96);
+  }
+
+
+
+
+
+/***STYLLING AF KONTAKT NEDENUNDER ****/
+
+.kontakt-container{
+    background-color: var(--secondary-1-color);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+
+.kontakt-info a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.kontakt-info a:hover{
+    color:white;
+
+}
+
+.kontakt-info  {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.kontakt-info img{
+    height: 30px;
+    
+}
+
+
+
+.info-container{
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  
+}
+
+.citat-op{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+
+.email, .phone {
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.tuscher-container{
+    position: absolute;  /* Gør at billedet sidder fast i sin position */
+    right: -125px;       /* Her flytter jeg billedet delvist ud af skærmen ''*/
+    bottom: 0;           /* ? skriv her*/
+    z-index: 10;        
+    overflow: hidden;    /* Dette skjuler den del af billedet, der stikker ud */
+}
+
+.tuscher-img {
+    height: 450px;      
+    width: auto;
+}
+
+
+       
+/* =================================== ! responsive layout, så det tilpasser sig skærmstørrelse ! ======================================= */
+       
+ @media screen and (max-width: 800px) {
+        .col-3 {
+           width: 100%;
+           text-align: center;
+         }
+         .col-3 img {
+           width: 100%;
+           align-items: center;
+         }
+         .col-2 {
+           width: 100%;
+           text-align: center;
+        }
+        
+        #content {
+         text-align: center;
+        }
+        
+    }
+
+
+@media only screen and (max-width:800px){
+            .container{
+                flex-direction: column;
+            }
+        }
+        
+        
+
+@media screen and (max-width: 800px) {
+            .tuscher-container {
+                right: -80px;      /* Dette Skubber tusch billedet delvist ud til højre */
+                bottom: -160px;     /* Dette flytter billedet længere ned */
+            }
+            .tuscher-img {
+                height: 250px;    
+            }
+        
+            .kontakt-info,.citat-op {
+                margin-left: 10px;    /* Her bliver venstre margin rduceret  */
+        
+            }
+        
+        }
+        

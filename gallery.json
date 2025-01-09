@@ -1,0 +1,83 @@
+{
+    "eud for alle": {
+      "titel": "EUD for alle",
+      "kort_beskrivelse": "Animationsvideo som en del af det regionale projekt; EUD for alle",
+      "årstal": "2022",
+      "lavet_med": "Karakteren er opbygget i Illustrator og herefter animeret i Character Animator",
+      "type": "video",
+      "file": "eud.mp4"
+    },
+    "motocross": {
+      "titel": "MotoCross",
+      "kort_beskrivelse": "Billedeserie tænkt til en reklamekampagne for motocross",
+      "årstal": "2023",
+      "lavet_med": "Photoshop",
+      "type": "image",
+      "file": "motocross.webp"
+    },
+    "malergrej": {
+      "titel": "Malergrej",
+      "kort_beskrivelse": "Illustration for hyggens skyld",
+      "årstal": "2022",
+      "lavet_med": "Illustrator",
+      "type": "image",
+      "file": "malergrej.webp"
+    },
+    "kat": {
+      "titel": "Very Peri Cat",
+      "kort_beskrivelse": "Kat på gul baggrund, og stregen er PANTONEs Very Peri - årets farve i 2022",
+      "årstal": "2022",
+      "lavet_med": "Illustrator",
+      "type": "image",
+      "file": "cat.webp"
+    },
+    "årskalender": {
+      "titel": "Årskalender",
+      "kort_beskrivelse": "Årskalender til vægophæng - kan indrammes og genbruges år efter år, når man skriver på glasset",
+      "årstal": "2021",
+      "lavet_med": "SketchBook",
+      "type": "image",
+      "file": "kalender.webp"
+    },
+    "ihg": {
+      "titel": "Inhouse Graphic - chefen fortæller",
+      "kort_beskrivelse": "SoMe-video lavet med henblik på formidling omkring skoleoplæringen som mediegrafiker",
+      "årstal": "2022",
+      "lavet_med": "Illustrator og AfterEffects",
+      "type": "video",
+      "file": "ihg.mp4"
+    },
+    "plakat": {
+      "titel": "Trøjborg Beboerhus 50 år",
+      "kort_beskrivelse": "Plakat lavet ud fra en skabelon designet i Canva, så beboerhusets medlemmer kan håndtere den uden adgang til øvrige programmer",
+      "årstal": "2024",
+      "lavet_med": "Canva",
+      "type": "image",
+      "file": "plakat.webp"
+    },
+    "samsung": {
+      "titel": "Samsung UHD TV",
+      "kort_beskrivelse": "Forslag til reklame for Samsung UHD TV ud fra slogaet \"Experience the Future\"",
+      "årstal": "2021",
+      "lavet_med": "Photoshop og InDesign",
+      "type": "image",
+      "file": "samsung.webp"
+    },
+    "sjo": {
+      "titel": "SJØ",
+      "kort_beskrivelse": "Koncept og visuel identiet til restauant",
+      "årstal": "2022",
+      "lavet_med": "Photoshop, Illustrator, InDesign",
+      "type": "image",
+      "file": "sjo.webp"
+    },
+    "lærkelil": {
+      "titel": "Lærkelil",
+      "kort_beskrivelse": "Key visual til sangerinden Lærkelils ep-udgivelse",
+      "årstal": "2024",
+      "lavet_med": "Photoshop, Illustrator, InDesign",
+      "type": "image",
+      "file": "laerkelil.webp"
+    }
+  }
+  
