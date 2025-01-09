@@ -240,7 +240,7 @@ h1 {
     .dark {
         width: 100%;
         text-align: center;
-        padding: 80px 20%;
+        padding: 60px;
         background-color: var(--primary-1-color);
     
     }
@@ -252,8 +252,7 @@ h1 {
     }
 
     .dark img{
-        width: 40%;
-        height: 40%;
+        height: 140px;
     }
 
     .dark2 {
@@ -283,6 +282,7 @@ h1 {
         width: 50%;
         padding: 16px;
     }
+
        
       
     .image-wrapper {
@@ -483,7 +483,6 @@ button:hover {
 }
 
 .icon {
-    
     width: 90px;
     height: auto;
     cursor: pointer;
