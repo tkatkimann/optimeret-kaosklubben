@@ -137,13 +137,18 @@ h1 {
    h3 {
     font-size: 1.2rem;
     font-weight: 600;
-    font-family: 'Righteous', sans-serif;
+    font-family: 'mon', sans-serif;
    }
 
 
 
 /* =================================== ! index.html med hero-sektion ! ======================================= */
 
+
+.btn{
+    font-family: 'Montserrat';
+    font-family: 100;
+}
 
 
 #hero {
@@ -208,11 +213,29 @@ h1 {
 }
 
 #content {
-        padding:100px 50px;
-        text-align:left;
-        width:80%;
+        padding:50px 50px;
         margin:0px auto;
+
 }
+
+
+#content article{
+    display: flex;
+   
+}
+
+#content article img{
+ margin-left: auto;
+ height: 150px;
+ margin-right: 60px;
+}
+
+
+#content article p{
+    width: 800px;
+}
+
+
 
     .dark {
         width: 100%;
@@ -314,11 +337,6 @@ h1 {
        
        
 
-    .site-intro {
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-       }
        
        
    .btn {
@@ -330,7 +348,6 @@ h1 {
     border: 2px solid #C56666;
     font-size: 14px;
     font-weight: 600;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s ease;
     text-decoration: none; 
