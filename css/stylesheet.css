@@ -397,6 +397,7 @@ h1 {
 
 .profil img{
     height: 200px;
+
 }
 
 
@@ -513,25 +514,25 @@ button:hover {
     height: auto;
 }
 
-
 .bubble {
     display: none; /* Skjult som standard */
     position: absolute;
     z-index: 10;
-    top:120%;
-    left: 50%;  /* Centrer boblen horisontalt */
+    top: 120%;
+    left: 50%; /* Centrer boblen horisontalt */
     transform: translateX(-50%); /* Flyt boblen tilbage til midten */
-    width: 200%;  /* Øg bredden af boblen, så den kan være større end containeren */
+    width: 800%; /* Øg bredden yderligere for at gøre boblen større */
 }
 
 .bubble.active {
     display: block; /* Viser boblen, når den er aktiv */
 }
 
-.bubble img{
-    width: 100px;
-    height: auto;
+.bubble img {
+    width: 450px; /* Gør billedet større */
+    height: auto; /* Behold proportionerne */
 }
+
 
 
 
@@ -737,7 +738,6 @@ footer{
 /***STYLLING AF KONTAKT NEDENUNDER ****/
 
 .kontakt-container{
-    background-color: var(--secondary-1-color);
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 100px;
@@ -752,7 +752,7 @@ footer{
 }
 
 .kontakt-info a:hover{
-    color:white;
+    color:#34B5A9;
 
 }
 
